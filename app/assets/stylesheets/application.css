@@ -13,3 +13,79 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+/* size and color  */
+height: 100vh;
+background-color: #EEF3F6;
+width: 100vw;
+overflow: hidden;
+/* position of children */
+position: relative;
+}
+
+/* mountains  */
+
+.mountain {
+position: absolute;
+width: 110vw;
+left: -40px;
+bottom: 0px;
+}
+
+.mountain-1, .mountain-2 {
+z-index: 1;
+}
+
+.mountain-3, .mountain-4 {
+z-index: 3;
+}
+
+.mountain-1 {
+  height: 90vh;
+}
+
+.mountain-2 {
+  height: 70vh;
+}
+
+.mountain-3 {
+  height: 50vh;
+}
+
+.mountain-4 {
+  height: 30vh;
+}
+
+/* fonts  */
+
+h1 {
+/* size and color */
+font-size: 6rem;
+font-weight: 900;
+color: white;
+/* position */
+position: absolute;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+z-index: 2;
+pointer-events: auto;
+}
+
+.parallax {
+  pointer-events: none;
+  display: block;
+  transform-origin: 80% 80% 0;
+  transform: translate(-50%, -50%);
+}
+
+::selection {
+  background-color: rgba(30, 40, 51, 0.8);
+  padding: 10px;
+}

@@ -1,0 +1,11 @@
+<main data-controller="mountains" data-action="mousemove->mountains#updateMouse">
+  <div data-mountains-target="parallax">
+    <%= image_tag ("mountains/mountains-1.png"), class:"parallax mountain mountain-1" %>
+  </div>
+  <div data-mountains-target="parallax">
+    <%= image_tag ("mountains/mountains-2.png"), class:"parallax mountain mountain-2" %>
+  </div>
+  <h1 data-action="click->mountains#clicked">MOUNTAINS</h1>
+  <%= image_tag ("mountains/mountains-3.png"), class:"parallax mountain mountain-3" %>
+  <%= image_tag ("mountains/mountains-4.png"), class:"parallax mountain mountain-4" %>
+</main>
