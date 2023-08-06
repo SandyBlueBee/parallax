@@ -1,0 +1,35 @@
+.snapper {
+  /* snapper */
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  /* snapper end */
+}
+
+section {
+  border: 1px solid blue;
+  /* snapper */
+  height: 100vh;
+  scroll-snap-align: center;
+  scroll-snap-stop: normal;
+  position: relative;
+  /* snapper end */
+}
+
+.credit-card {
+  /* shape and color  */
+  width: 320px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url("scroll/credit-card.jpg");
+  background-size: 100% 100%;
+  /* position */
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.bordered {
+  border: 1px solid red;
+}

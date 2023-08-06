@@ -24,11 +24,13 @@ export default class extends Controller {
   }
 
   parallaxing(mouseX,  mouseY){
-    // console.log(this.parallaxTargets)
-    // this.parallaxTargets.style.display="none";
     this.parallaxTargets.forEach((element) => {
-      // Perform some action on each target element
-      element.style.transform = `translateX(calc(-50% + ${mouseX}px)) translateY(calc(-50% + ${mouseY}px))`;
+      // moving within the screen
+      let speedX = element.dataset.speedx;
+      let speedY = element.dataset.speedy;
+      // moving in depth
+      let speedZ = mouseY/7; // requires perspective
+      element.style.transform = `translateX(calc(0% + ${(-mouseX) * speedX}px)) translateY(calc(${(-mouseY) * speedY}px)) perspective(2300px) translateZ(${speedZ}px)`;
     });
   }
 }

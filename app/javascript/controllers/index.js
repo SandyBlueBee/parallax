@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import MountainsController from "./mountains_controller"
 application.register("mountains", MountainsController)
+
+import ScrollController from "./scroll_controller"
+application.register("scroll", ScrollController)
